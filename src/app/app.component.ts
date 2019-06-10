@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular';
+  //name = 'Angular';
+  //name : string = "";
+  amount: number = 500;
+  constructor() {
+  }
+ 
+  deposit(){
+    this.amount +=100;
+  }
 }

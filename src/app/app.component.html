@@ -1,7 +1,12 @@
-<hello name="{{ name }}"></hello>
+
 
  <div class="container">
-     <input [(ngModel)]='name' />
+     <!--input [(ngModel)]='name' /-->
+     <!--input [value]="name" (input)="name=$event.target.value" />
       <br/>
-      <h1>Hello {{name}}</h1>
+      <h1>Hello {{name}}</h1-->
+    Parent Component:<br/>
+    Available amount: {{amount}} 
+    <button (click)="deposit()">Deposit 100</button>
+    <hello [(amount)]="amount"> </hello>
   </div>
